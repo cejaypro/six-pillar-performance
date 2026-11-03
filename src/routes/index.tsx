@@ -468,7 +468,9 @@ function PillarRow({
     <div className="rounded-md border border-border/60 bg-card/40 p-3">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <Icon className="h-3.5 w-3.5" style={{ color }} />
+          <span className="flex" style={{ color }}>
+            <Icon className="h-3.5 w-3.5" />
+          </span>
           <span className="font-display text-xs tracking-[0.2em] text-foreground">
             {label.toUpperCase()}
           </span>
