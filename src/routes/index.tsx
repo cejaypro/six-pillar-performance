@@ -464,7 +464,7 @@ function PillarRow({
   pillar: { label: string; value: number; icon: React.ComponentType<{ className?: string }>; color: string };
 }) {
   const { label, value, icon: Icon, color } = pillar;
-  const barColor = label.toLowerCase() === "mobility" ? "#FF2D95" : color;
+  const barColor = color;
   return (
     <div className="rounded-md border border-border/60 bg-card/40 p-3">
       <div className="flex items-center justify-between">
