@@ -464,6 +464,7 @@ function PillarRow({
   pillar: { label: string; value: number; icon: React.ComponentType<{ className?: string }>; color: string };
 }) {
   const { label, value, icon: Icon, color } = pillar;
+  const barColor = label === "Mobility" ? "#EC4899" : color;
   return (
     <div className="rounded-md border border-border/60 bg-card/40 p-3">
       <div className="flex items-center justify-between">
@@ -482,7 +483,7 @@ function PillarRow({
       <div className="mt-2 h-1 w-full overflow-hidden rounded-full bg-muted/60">
         <div
           className="h-full rounded-full transition-all"
-          style={{ width: `${value}%`, background: color }}
+          style={{ width: `${value}%`, background: barColor }}
         />
       </div>
     </div>
